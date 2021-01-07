@@ -59,7 +59,7 @@ model_types(data = data)
 
 ```
 
-##### Use `glimpse_models()` to visualy explore what each *bodygram* looks like.
+##### Use `glimpse_models()` to visually explore what each *bodygram* looks like.
 
 ```{r}
 library(bodygramR)
