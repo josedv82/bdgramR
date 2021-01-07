@@ -123,7 +123,9 @@ plot
 
 ### 4) Acknowledgment
 
-I took some inspiration from [athleteSR](https://www.athletesr.com/) and [Thermohuman](https://thermohuman.com/) and tried to replicate the body diagrams they use on their software as they are very well designed. In this case, I have named the *bodygrams* after the actual software.
+I'd like to credit two known sources of inspiration for some of the availabel body diagrams in this package.
+
+Two of the available *bodygrams* are inspired on [athleteSR](https://www.athletesr.com/) and [Thermohuman](https://thermohuman.com/) as  the body diagrams they use on their software are very well designed. In this case, I have named the *bodygrams* after the actual software.
 
 ### 5) Future Development
 
