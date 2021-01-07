@@ -4,7 +4,7 @@
   <!-- badges: end -->
 
 
-# {bodygramR}
+# {bdgramR}
 A collection of body diagram visualizations in R
 
 
@@ -14,7 +14,7 @@ A collection of body diagram visualizations in R
 ***
   
   
-### 1) What is {bodygramR}?
+### 1) What is {bdgramR}?
 
 An R package that provides raw **x,y** coordinates to draw human body diagrams in R. This type of visualizations are commonly used in Sport Science, Strength and Conditioning and other health related areas to report visual information about muscle / joint related metrics such as muscle soreness, muscle activation, strength, temperature, etc...
 
@@ -34,13 +34,13 @@ devtools::install_github("josedv82/bodygramR")
 
 ### 3) Usage
 
-{bodygramR} is a small package and provides only a handful on functions:
+{bdgramR} is a small package and provides only a handful on functions:
 
-##### Get a list of all the *bodygrams* types available with `model_types()`
+##### Get a list of all the body diagram types available with `model_types()`
 
 
 ```{r}
-library(bodygramR)
+library(bdgramR)
 
 model_types(data = data)
 
@@ -59,10 +59,10 @@ model_types(data = data)
 
 ```
 
-##### Use `glimpse_models()` to visually explore what each *bodygram* looks like.
+##### Use `glimpse_models()` to visually explore what each body diagram looks like.
 
 ```{r}
-library(bodygramR)
+library(bdgramR)
 
 glimpse_models(data = data, color = "brown", fill = "orange")
 
@@ -70,12 +70,12 @@ glimpse_models(data = data, color = "brown", fill = "orange")
 
 <img src="man/images/glimpse_output.png" width="800" />
 
-#### Get raw x/y coordinates of the *bodygram* you wish to use with `bodygram()`
+#### Get raw x/y coordinates of the body diagram you wish to use with `bodygram()`
 
 ```{r}
-library(bodygramR)
+library(bdgramR)
 
-dat <- bodygram(data = data, model = "original_male")
+dat <- bdgramr(data = data, model = "original_male")
 
 head(dat)
 
@@ -88,17 +88,17 @@ head(dat)
 6  1  Anterior Lower_Body Calves Soleus Right 741 726
 ```
 
-#### Finally, you can use `geom_bodygram()` within your ggplot code.
+#### Finally, you can use `geom_bdgramr()` within your ggplot code.
 
 ```{r}
 
-library(bodygramR)
+library(bdgramR)
 library(ggplot2)
 
-dat <- bodygram(data = data, model = "original_male")
+dat <- bdgramr(data = data, model = "original_male")
 
 ggplot(data = dat, aes(x,y, group = Id)) +
-  geom_bodygram()
+  geom_bdgramr()
 
 ```
 <img src="man/images/Picture1.png" width="600" />
@@ -106,14 +106,14 @@ ggplot(data = dat, aes(x,y, group = Id)) +
 Like with any other ggplot, users can add more layers to further customise the visualization. For example:
 
 ```{r}
-library(bodygramR)
+library(bdgramR)
 library(ggplot2)
 
-dat <- bodygram(data = data, model = "original_male")
+dat <- bdgramr(data = data, model = "original_male")
 
 plot <- ggplot(data = dat, aes(x,y, group = Id)) +
-  geom_bodygram(color = "cyan", aes(fill = Muscle)) +
-  ggtitle("BodygramR: original_male diagram")
+  geom_bdgramr(color = "cyan", aes(fill = Muscle)) +
+  ggtitle("BdygramR: original_male diagram")
   
 plot
 
@@ -125,9 +125,9 @@ plot
 
 I'd like to credit two known sources of inspiration for some of the body diagrams in this package.
 
-Two of the available *bodygrams* are inspired on [athleteSR](https://www.athletesr.com/) and [Thermohuman](https://thermohuman.com/) as  the body diagrams they use on their software are very well designed. In this case, I have named the *bodygrams* after the actual software.
+Two of the available body diagrams are inspired on [athleteSR](https://www.athletesr.com/) and [Thermohuman](https://thermohuman.com/) as  the body diagrams they use on their software are very well designed. In this case, I have named them after the actual software.
 
 ### 5) Future Development
 
-{bodygramR} is a small package and likely not much more development needed besides adding some more *bodygram* types. However, the package is currently under development and I welcome any feedback to improve or issues you may come across when using it.
+{bdgramR} is a small package and likely not much more development needed besides adding some more body diagram types. However, the package is currently under development and I welcome any feedback to improve or issues you may come across when using it.
 
