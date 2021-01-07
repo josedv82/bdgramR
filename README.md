@@ -29,7 +29,7 @@ For more information on how body diagrams can be used in R please visit [this ar
   
 #Install the development version from GitHub  
 install.packages("devtools")
-devtools::install_github("josedv82/bodygramR")
+devtools::install_github("josedv82/bdgramR")
 ```
 
 ### 3) Usage
