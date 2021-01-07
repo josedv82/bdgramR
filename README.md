@@ -1,13 +1,24 @@
+ <!-- badges: start -->
+  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+  [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+  <!-- badges: end -->
+
+
 # {bodygramR}
 A collection of body diagram visualizations in R
 
-***
 
+<img src="man/images/bodygramRlogo.png" align="right" width="300" />
+  
+  
+***
+  
+  
 ### 1) What is {bodygramR}?
 
 An R package that provides raw **x,y** coordinates to draw human body diagrams in R. This type of visualizations are commonly used in Sport Science, Strength and Conditioning and other health related areas to report visual information about muscle / joint related metrics such as muscle soreness, muscle activation, strength, temperature, etc...
 
-For more information on how body diagrams can be used in R please visit [this article](https://rpubs.com/Josedv82/body_diagrams_R) where I wrote about some ideas to add visualizations to reports and integrate with other packages for more functionality.
+For more information on how body diagrams can be used in R please visit [this article](https://rpubs.com/Josedv82/body_diagrams_R) and this [github repo](https://github.com/josedv82/body_avatars_in_R) where I wrote about some ideas to add visualizations to reports and integrate with other packages for more functionality.
 
 ### 2) Installation
 
@@ -57,6 +68,7 @@ glimpse_models(data = data, color = "brown", fill = "orange")
 
 ```
 
+<img src="man/images/glimpse_output.png" width="800" />
 
 #### Get raw x/y coordinates of the *bodygram* you wish to use with `bodygram()`
 
@@ -89,6 +101,7 @@ ggplot(data = dat, aes(x,y, group = Id)) +
   geom_bodygram()
 
 ```
+<img src="man/images/Picture1.png" width="600" />
 
 Like with any other ggplot, users can add more layers to further customise the visualization. For example:
 
@@ -105,6 +118,8 @@ plot <- ggplot(data = dat, aes(x,y, group = Id)) +
 plot
 
 ```
+
+<img src="man/images/Picture2.png" width="600" />
 
 ### 4) Acknowledgment
 
