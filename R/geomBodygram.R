@@ -9,7 +9,7 @@
 #'@noRd
 
 
-geomBodygram <- ggplot2::ggproto("geomBodygram", ggplot2::Geom,
+geomBdgramr <- ggplot2::ggproto("geomBdgramr", ggplot2::Geom,
 
                                  required_aes = c("x", "y"),
                                  default_aes = ggplot2::aes(colour = "black", fill = "orange", alpha = 1, linetype = 1),

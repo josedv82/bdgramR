@@ -1,4 +1,4 @@
-#' Bodygrams
+#' Bdgramr
 #'
 #' This function returns a dataframe with the coordinates of a unique body diagram.
 #'
@@ -20,11 +20,11 @@
 #'
 #' @export
 #' @examples
-#' bodygram(data = data)
+#' bdgramr(data = data)
 #'
 
 
-bodygram <- function(data = data, model = "futuristic_male"){
+bdgramr <- function(data = data, model = "futuristic_male"){
 
   result <- tryCatch({
 

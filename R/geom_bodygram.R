@@ -1,8 +1,8 @@
-#' geom_bodygram
+#' geom_bdgramr
 #'
 #' This function creates a custom geom for ggplot.
 #'
-#' @param data A dataframe. The dataframe with all the coordinates points. Usually the return of `bodygram()`
+#' @param data A dataframe. The dataframe with all the coordinates points. Usually the return of `bdgramr()`
 #' @param mapping aesthetics, the x,y and grouping part of the aesthetics
 #' @param position The position parameter. It defaults to "identity"
 #' @param stat The stats parameter. Itdefaults to "identity"
@@ -16,20 +16,20 @@
 #'
 #' @export
 #' @examples
-#' model_df <- bodygramR::bodygram(data = data, model = "futuristic_male")
+#' model_df <- bdgramR::bdgramr(data = data, model = "futuristic_male")
 #' plot <- ggplot2::ggplot(data = model_df, ggplot2::aes(x, y, group = Id)) +
-#'          geom_bodygram(lty = 3, color = "white", ggplot2::aes(fill = Group))
+#'          geom_bdgramr(lty = 3, color = "white", ggplot2::aes(fill = Group))
 #' plot
 #'
 
 
 
-geom_bodygram <- function(mapping = NULL, data = NULL, position = "identity",
+geom_bdgramr <- function(mapping = NULL, data = NULL, position = "identity",
                           stat = "identity", na.rm = FALSE, show.legend = NA,
                           inherit.aes = TRUE, ...) {
 
   list(ggplot2::layer(
-    geom = geomBodygram, mapping = mapping,  data = data, stat = stat,
+    geom = geomBdgramr, mapping = mapping,  data = data, stat = stat,
     position = position, show.legend = show.legend, inherit.aes = inherit.aes,
     params = list(na.rm = na.rm, ...)
   ), ggplot2::scale_y_reverse(), ggplot2::theme_void())
