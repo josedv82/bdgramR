@@ -1,0 +1,18 @@
+Package: bodygramR
+Type: Package
+Title: Figure Coordinates for Visualizations of Human Body Diagrams
+Version: 0.1.0
+Authors@R: person(given = "Jose", family = "Fernandez", role = c("aut", "cre"), email = "jose.fernandezdv@gmail.com")
+Description: Small package to provide polygon coordinates to create body diagrams. This type of visualizations are usually used as heat maps in a variety of applications, especially in the field of Sport Science and Strength & Conditioning.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    ggplot2,
+    tidyr,
+    magrittr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
