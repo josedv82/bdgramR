@@ -70,7 +70,7 @@ glimpse_models(data = data, color = "brown", fill = "orange")
 
 <img src="man/images/glimpse_output.png" width="800" />
 
-#### Get raw x/y coordinates of the body diagram you wish to use with `bodygram()`
+#### Get raw x/y coordinates of the body diagram you wish to use with `bdgramr()`
 
 ```{r}
 library(bdgramR)
